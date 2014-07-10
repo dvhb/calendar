@@ -1,0 +1,318 @@
+@import 'buttonBlueIcon'
+@import "setting"
+@import '_icon/_icon.styl'
+@import 'ButtonIconLeft.styl'
+
+.button
+  display inline-block
+  text-align center
+  color grey
+  background light-grey
+  border-top 1px solid transparent
+  border-left none
+  border-right 2px solid dark-grey
+  border-bottom 2px solid dark-grey
+  width auto
+  padding 7px 13px
+  text-shadow 0 1px 0 rgba(255, 255, 255, 0.5)
+  margin 1px -4px 1px 0px
+  ff(bold,13)
+  cursor pointer
+  &:hover
+    background-color #efefef;
+  &:active
+    background-color #f0f0f0
+    border-top 1px solid transparent
+    border-right 1px solid #b6b6b6
+    border-bottom 1px solid #b6b6b6
+    border-left 0
+    padding 7px 14px 8px 13px
+
+.button__sticky_right
+  border-right 1px solid dark-grey
+  &:active
+    padding-right 13px !important
+
+.button_cancel
+  display block
+  position absolute
+  right -16px
+  top 16px
+  width 32px
+  height 32px
+  border none
+  background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM5MDE5MzYxMEJFMjExRTNBRUEyOTdCN0QxQkREREU1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM5MDE5MzYyMEJFMjExRTNBRUEyOTdCN0QxQkREREU1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MEVGNjlEMTQwQkUwMTFFM0FFQTI5N0I3RDFCRERERTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzkwMTkzNjAwQkUyMTFFM0FFQTI5N0I3RDFCRERERTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz61gP1PAAAB5ElEQVR42qyWu0oDQRSGN4lKFPGKFrHwAQRRyCJYasRWvGFhKWipgmChjYXaaWOnIBFELMRGImqeIKAhja0Yr40QBU0h6n/CGVjWzczsZH/4AtnszpfdmdlzQvF43FKkEYyCQdADOkATKIBHkAOX4BS8qQYLSYQ06BKYB3WWOkWwA9Zl4kgsFvM6PgVSYBhUW3qpAv1gFryCrI4wBDbBluZdeSUKRkArOFcJN8CyFUz6QDs4Kyekx7htBRsb5MGNW9jGt19rBR9a3UnwQV/CfHAVNLvPzGQyJXQiObcerIkvJGwAM6rBKvkdmeb5LAnHyj1K27aVgzqPO893pQZMCGFCOusSqaZMJCGE3cql5iH1KaP0ildbgedRa2HI/owiP7Qrwroyr8F9yMTTjNLHu+4VsjnUyC+94En44Fems3o9khe3mTORGUhzQpg2uTMD6ZUQnnDxNNrUmtJvcCyEVJ33/axOg61xBJ6dLQaVjFs/W8RHPkEXuHOWJyodL1ypg84CN1n/CnCW3+h2gLJdLn1lWwxqnFq4Pag0e2CON7y0a0txvznAZcVvvsAiWHHLZG3iNTjgLoAmPKIhoqV/CMbBhUkjLELzOgmGuJR1cjtJuec3SJr32VMlnbeq9yyaXPgnwAAgRI71HbB4gwAAAABJRU5ErkJggg==') no-repeat center center
+.button__right
+  float right
+  margin-top 4px
+  margin-right 3px
+
+.button__smallright
+  float right
+  margin-top 12px !important
+  margin-right 3px
+
+@import '__colors/button__colors'
+@import '__sizes/button__sizes'
+
+.button__dropdown
+  text-align left
+  padding 16px 7px 16px 14px
+  border-top 1px solid #d5d5d5 !important
+  margin 0 -4px 0 0px
+  background-color #f0f0f0 !important
+
+.button__icon
+  padding-left 40px
+  border-top 1px solid transparent !important
+  &:active
+    padding-left 40px
+
+.button__icon__small
+  padding-left 20px
+  border-top 1px solid transparent !important
+  &:active
+    padding-left 20px
+
+.button__like
+  display block
+  position relative
+  float right
+  width 72px
+  color grey
+  background light-grey
+  border-top 1px solid transparent
+  border-left none
+  border-right 2px solid dark-grey !important
+  border-bottom 2px solid dark-grey !important
+  height 34px
+  padding 0px 0px
+
+.button__like_onlynumber
+  width auto
+  &:active
+    width auto
+    padding 0px 0px
+
+.button__like_left
+  width 36px
+  height 34px
+  display block
+  position absolute
+  top 0
+  left 0
+  border-top 1px solid transparent
+  border-left none
+  border-right 1px solid transparent !important
+  border-bottom 1px solid transparent !important
+  &:active
+    margin-top -1px
+    background-position center 45%
+    background-color #f0f0f0
+    border-top 1px solid transparent !important
+    border-right 1px solid transparent !important
+    border-bottom 1px solid #b6b6b6 !important
+
+.button_icon__like_a
+  &.button__like_left
+    &:active
+      margin-top -1px
+      background-position center 40%
+      background-color light-grey
+      border-top 1px solid transparent
+      border-left none
+      border-right 1px solid transparent !important
+      border-bottom 2px solid #b6b6b6 !important
+.button__like_number
+
+  width 34px
+  height 33px
+  padding 7px 0 0 0
+
+.button__like_right
+  border-left 1px dotted #333
+  width 34px
+  height 31px
+  padding 7px 0 0 0px
+  position absolute
+  top 0
+  right 0
+  text-align center
+  ff(bold,13)
+  color #000
+
+
+.button__buttonicon
+
+  border-top 1px solid transparent !important
+
+.button__icon_plus
+  background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA3MEI3NzAzMEVERDExRTNBM0FCRDU3QUZGRjFCMEJBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA3MEI3NzA0MEVERDExRTNBM0FCRDU3QUZGRjFCMEJBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDcwQjc3MDEwRUREMTFFM0EzQUJENTdBRkZGMUIwQkEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDcwQjc3MDIwRUREMTFFM0EzQUJENTdBRkZGMUIwQkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6JKXMsAAAAXklEQVR42sRT2wpAIQjbov//5R0iAonIIxbtJbEHd1ECEBIoSKKOQooRIdlfI4HB4fojQZ5HaQ/OmThr2/R4l4GNc0S16lk6uxjdv7spNOrehqY3ke+vMXqFMz4BBgCEQh8VEDwYuwAAAABJRU5ErkJggg==') no-repeat 1em center
+
+.button__smallicon
+    ff(bold,11)
+    border none !important
+    color #86b5d2
+    background-position left top !important
+    padding-left 20px
+    padding-top 0px
+    margin-top 5px
+    &:hover
+      background-color transparent
+
+.button__mediumicon
+    ff(bold,13)
+    border none !important
+    color blue
+    background-position left center !important
+    padding 3px 20px 8px 25px
+    &:hover
+      background-color transparent
+    &:active
+      padding 3px 20px 8px 25px
+
+
+
+
+.button__textinput
+    float left
+    box-sizing border-box
+    background #FFF
+    border 1px solid #d6d6d6
+    padding-left 32px
+    height 50px
+    min-height 50px
+    max-height 50px
+    ff(normal,14)
+    margin 0
+    margin-top 32px
+    margin-bottom 32px
+    display inline-block
+    width 100%
+    text-align left
+    color rgba(0,0,0,0.4)
+.button__topborder
+  border-top 1px solid #959595 !important
+
+.button__textinput_icon
+    width 44px
+    height 44px
+    border-left 1px solid #e9eaeb
+    border-top none
+    border-right none
+    border-bottom none
+    position absolute
+    right 0
+    top 11px
+@import 'button.ie.styl'
+
+
+.button__noleftpadding
+  padding-left 0px
+  border none
+  margin 0
+
+  &:active
+    padding-left 0px
+    border none
+    margin 0
+    padding-bottom 7px
+
+/********* CalendarButtons *********/
+
+.ButtonGroup
+  & > *
+    float left
+    cf()
+
+.ButtonCalendar
+  width 44px
+  height 44px
+  background #e3e3e3
+  position relative
+  border-bottom 1px solid #b6b6b6
+  border-right 1px solid #b6b6b6
+  display block
+  cursor pointer
+  background-position center 13px
+  background-repeat no-repeat
+  z-index 1
+
+  &:after
+    position absolute
+    content: ''
+    left 1px
+    top 1px
+    width 100%
+    height 100%
+    border-bottom 1px solid #b6b6b6
+    border-right 1px solid #b6b6b6
+    display block
+
+  &:active,
+  &.active
+    border-top 1px solid #FFF
+    border-left 1px solid #fff
+    border-bottom none
+    border-right none
+    background-position center -68px
+    background-color #f0f0f0
+
+    &:after{
+      left 0
+      top 0
+    }
+
+  &:hover
+    background-position center -68px
+    background-color #f0f0f0
+
+.ButtonCalendarExpand
+  @extend .ButtonCalendar
+
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABkCAYAAACLtWCLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1QzU4NjdFN0U1QTcxMUUzQjc5OUYzNzE4ODMyQ0JCMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1QzU4NjdFOEU1QTcxMUUzQjc5OUYzNzE4ODMyQ0JCMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVDNTg2N0U1RTVBNzExRTNCNzk5RjM3MTg4MzJDQkIzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjVDNTg2N0U2RTVBNzExRTNCNzk5RjM3MTg4MzJDQkIzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+iSB35gAAALtJREFUeNrs2FEKwyAMgOE6eiM9k57JO3mnzIcVWlCboCtj/IFCqfKJJvUhznsv24J4bYvCSY0lUN3aFFBKUW9NPs/UGUnn3QSJ8tsQEuMCTUiU5zaELKVwmbu3UnmOEMLtmLaOjpXdbB09+68B6e6jqfQ3C7K3GFkDAgICAgICAgICAgICAgICegjaU0r/2hiPMU4BOWf11miM25DunO80xo9UnqNW/u2Yto6GnVFLHXGx/Rq0rDH+FmAAOp1GYzCPWJAAAAAASUVORK5CYII=');
+
+.ButtonCalendarWeek
+  @extend .ButtonCalendar
+
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABkCAYAAACLtWCLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowOTIxN0E0RkU1QTgxMUUzQjIzNEZDQjBBRDIxNjYzOSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowOTIxN0E1MEU1QTgxMUUzQjIzNEZDQjBBRDIxNjYzOSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA5MjE3QTRERTVBODExRTNCMjM0RkNCMEFEMjE2NjM5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA5MjE3QTRFRTVBODExRTNCMjM0RkNCMEFEMjE2NjM5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+sUdABAAAAKhJREFUeNrs2EEKgCAQheEmupGeSc/knbyT6UJQIiIxMvtnlRN85IvZjCilwtKh1qVTbfnBe98EaK1rKDak8WNCBeUGGR0yWk9ehBvnvhkdoJRVmdfVOZcUI0JGD2c03qxJiNVraOWRvwYEBAQEBAQEBAQEBAQEBAQEdL82a+2gi3HnXBMQb1RDsTHrYnyYjD6w9E1ZlXldnXOJMeYvi/HXM5p4Mb4LMAAXDXnvd8+icgAAAABJRU5ErkJggg==');
+
+.ButtonCalendarDaily
+  @extend .ButtonCalendar
+
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABkCAYAAACLtWCLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQkU4Njk5NkU1QTgxMUUzQkY5QkExQ0M0NjNCMzk3QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQkU4Njk5N0U1QTgxMUUzQkY5QkExQ0M0NjNCMzk3QSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkRCRTg2OTk0RTVBODExRTNCRjlCQTFDQzQ2M0IzOTdBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkRCRTg2OTk1RTVBODExRTNCRjlCQTFDQzQ2M0IzOTdBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+HcxaZQAAALNJREFUeNrsmN0JwCAMhI24ke7kTO7kTqkUhFoo/lRCaC8vLQofuUt8OfLes9lQ1mwqV39yzkuAEML5pYs0WmyGm47qwb88Grq3I0a+9mhGrpg0+fGLgXh0gm5manX5elPT4RFxqV2Plv65RwABBBBAAAEEEEAAAQQQQAABBBBACkEuxqg0GE8pLQGKohZUDr4ajEt4pCgYn5FrO/oJr18oGL9PrS5fD8RPWzvSlb5g/BBgAO14P/tI7AzQAAAAAElFTkSuQmCC');
+
+.ButtonCalendarReserve
+  @extend .ButtonCalendar
+
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABkCAYAAACLtWCLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4QUIzQjc5NUU1QTkxMUUzQjE0MEU5NEM4MTIwMTZBRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4QUIzQjc5NkU1QTkxMUUzQjE0MEU5NEM4MTIwMTZBRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhBQjNCNzkzRTVBOTExRTNCMTQwRTk0QzgxMjAxNkFGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhBQjNCNzk0RTVBOTExRTNCMTQwRTk0QzgxMjAxNkFGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+c+eQRwAAAWNJREFUeNrsmDFugzAUhjG1DVIrdUqWzDkBnKFDZ4aMneBKZWqmNFJvkKEbGxfIPTKATeU+V3WLiCPZwJCq75csZBN/eu/nKcNPlFLBHCJJkvT3Gaw3h3sfsB5gvdd1/XUQ9l4uGGMvjgXcRFH0Cs97c/ADiuN4K6W8c22lbdsl5/x5CHpqmubR1xchxCZN08x4tALyEQ5vx5gMdpygk3UIve7GQrS0HVDInlZV1c7w9YVuzQwS+X4O90NZfx8GM+kPgPTIm7G36dJ7m9m+ulKzifr9Q5rUGp0ACPoF/KeBRBCCEIQgBCEIQQhCEIIQhCAEIQhBCEKQv0ie5/29dzBeluVZRQtKqXMwzhizB+Oc823Xdc7BuJRyCbDzYFwI4R2MA2xTFEVmPFpBS0eoZlSmDXdPcHcdQnm7sRAtbQcw9oFS6qCm66Bbw2DcE6RH3oy9TZfe28z2FQbjDsXM2tqnAAMAc7LIT4fhqkcAAAAASUVORK5CYII=');
+
+.ButtonCalendarCollapse
+  @extend .ButtonCalendar
+
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABkCAYAAACLtWCLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4QkQ3OTY5QUU3MEYxMUUzQTJEM0U4OTlGQkIwQjU4NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4QkQ3OTY5QkU3MEYxMUUzQTJEM0U4OTlGQkIwQjU4NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhCRDc5Njk4RTcwRjExRTNBMkQzRTg5OUZCQjBCNTg3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhCRDc5Njk5RTcwRjExRTNBMkQzRTg5OUZCQjBCNTg3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Ns2gaQAAANlJREFUeNrs2FEKwyAMBuBm9EZ6J8/knbyT07HAKklMaQsO/rxYaPgoSepDKISwTaJ+T5JellI+52u7KQD9I7QrM2PN02+Q+EU8XJ4Ycw9QjJE8WM/puWaNZpiEqMXWMA0xuzZiFiJ1TcIqP59pv4h5ukjtPqpLTTbVFnf9IoRrBBAgQIAAAQIECBAgQIAAAQIEaBFoTynNcszFeM4ZxQb0zGKch8sTY+4BalNOHqzn9FyzRjNMQtRia5iGmF0bMQuRuiZhlZ/PtF/EvHN0aQ3N99l6i/G3AAMA21Fcq72PwHUAAAAASUVORK5CYII=');
+
+
+
+
+/********* !CalendarButtons *********/
+
+
+/****** Used on calendar popup ******/
+
+.ButtonSmall
+  padding-top 3px
+  padding-bottom 4px
+  font-size 11px
+  padding-left 0px
+  padding-right 0px
+  text-align center
+  min-width 73px
+  &:active{
+    padding-left 0px
+    padding-right 0px
+    padding-top 3px
+    padding-bottom 4px
+  }
+
+/****** !Used on calendar popup ******/

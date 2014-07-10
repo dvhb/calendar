@@ -1,0 +1,84 @@
+.calendarMonthRow
+	overflow hidden
+
+.calendarMonthCol
+	background #f0f0f0
+	float left
+
+.calendarMonthCell
+	float left
+	height 40px
+	border-bottom 1px solid #b6b6b6
+	width 14.2857%
+	text-shadow 0 1px 0 rgba(255,255,255,0.5)
+	border-left 1px solid #fff
+	margin-bottom 1px
+	position relative
+	padding 2px 6px
+
+	text-align right
+	background #f0f0f0
+	ff(medium, 11)
+	color #666666
+	cursor pointer
+
+	&:first-child
+		border-left-color transparent
+
+.calendarMonthCellHeader
+	@extend .calendarMonthCell
+
+	text-align center
+	background #e6e6e6
+	ff(medium, 11)
+	line-height 36px
+	color #333333
+	cursor default
+
+.calendarMonthCellWeekend
+	@extend .calendarMonthCell
+
+	color #b3b3b3
+
+.calendarMonthCellActive
+	@extend .calendarMonthCell
+
+	background #cfdde6
+
+
+
+.calendarMonthInviteBlock
+	position absolute
+	left 2px
+	bottom 2px
+	z-index 2
+
+.calendarMonthInvite
+	background #da0000
+	color #fff
+	ff(bold, 16)
+	line-height 14px
+	text-align center
+	height 14px
+	width 17px
+	border 1px solid #fff
+	margin-right -1px
+	float left
+	border-radius 1px
+	text-shadow none
+	box-sizing content-box
+
+.calendarMonthInviteAccepted
+	@extend .calendarMonthInvite
+
+	ff(bold, 11)
+	line-height 14px
+	background #0078c1
+
+.calendarMonthFill
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMUE2OTUzQUU1ODAxMUUzODI1MEY1NUQwRjJFNDg0OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMUE2OTUzQkU1ODAxMUUzODI1MEY1NUQwRjJFNDg0OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQxQTY5NTM4RTU4MDExRTM4MjUwRjU1RDBGMkU0ODQ5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQxQTY5NTM5RTU4MDExRTM4MjUwRjU1RDBGMkU0ODQ5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+qZQXFgAAACNJREFUeNpiZmBg8AXiW0DM8P//fwZmZA468AUJMqLLAAQYAPs/DkrRL3VOAAAAAElFTkSuQmCC')
+	position absolute
+	height 100%
+	left 0
+	right 0
+	bottom 0

@@ -1,0 +1,122 @@
+.CalendarWeekOverlay
+	height 0px
+	margin 0
+	padding 0
+
+.CalendarWeekOverlayItem
+	position absolute
+	background #d0dde4
+	background rgba(0,120,193,0.1)
+	border-left 2px solid #0078c1
+	list-style none
+	font-size 11px
+	color #256c97
+	padding-left 2px
+	padding-right 20px
+	overflow hidden
+	line-height 15px
+	cursor pointer
+
+.CalendarWeekOverlayItemActive
+	z-index 1001
+	cursor pointer
+
+.CalendarWeekOverlayItemBlue
+	background:rgba(0,120,193,0.2);
+	cursor pointer
+
+.CalendarWeekOverlayItemPink
+	background:rgba(62,48,165,0.1);
+	border-left-color #3e30a5
+	cursor pointer
+
+.CalendarWeekOverlayItemPurple
+	background:rgba(48,62,165,0.1);
+	border-left-color #303ea5
+	cursor pointer
+
+.CalendarWeekOverlayItemGreen
+	background:rgba(48,144,165,0.1);
+	border-left-color #3090a5
+	cursor pointer
+
+.CalendarWeekOverlayItemCutted
+	@extend .CalendarWeekOverlayItem
+
+	white-space nowrap
+	text-overflow ellipsis
+	cursor pointer
+
+
+.CalendarWeekOverlayItemInvite
+	position absolute
+	top 2px
+	right 2px
+	width 12px
+	height 10px
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAKCAYAAAD2Fg1xAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDQjUwMjFGMkU2NkMxMUUzOEY4RkQ1NUVERDU3RDhCMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDQjUwMjFGM0U2NkMxMUUzOEY4RkQ1NUVERDU3RDhCMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNCNTAyMUYwRTY2QzExRTM4RjhGRDU1RURENTdEOEIwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNCNTAyMUYxRTY2QzExRTM4RjhGRDU1RURENTdEOEIwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8++bFxiwAAAS9JREFUeNpi/P//PwMIMFYe4gFS6kB853+73UcGKACK/2dAAEagHAMtAS53EAJMUM1yjIwM14DMM0D6JpCvgkP9fxp7glh3MKAHNNgjwlysLcCIkQW79D+DuCg3ayfc5cAYoHUswAA+d+DzBIgGe0Saj80RWYEIN6s1kmJGIKaLRwi44z82T8ACG+yRKAOxT8iKimxk3mNLTrSOGVzuQA55bJ4ACYE94qgkMFeIiwUsoSvBzWAtz9eOkTmgGmjpEVzuQA5AbJ6AEBUHE4AZawowTXLDFTMyvAfyE4AKNyHFCCONMzpBdyAncfSAZWJjZpyGrBma0QSB4ougFjDQI48Qcgdy0Y8tdTD9+vufE5vBQHF+BjoCIt3BiCuJM/6H1Yg4YpxeSYtAHUXQboAAAwBPsZfa/g5I1gAAAABJRU5ErkJggg==');
+
+.CalendarWeekOverlayItemInviteAccepted
+	@extend .CalendarWeekOverlayItemInvite
+
+	width 16px;
+	background-position right 0
+
+.CalendarWeekOverlayItemNewEvent
+	color #194763
+	ff(medium, 11)
+
+.CalendarWeekOverlayItemNewEventCutted
+	@extend .CalendarWeekOverlayItemNewEvent
+
+	overflow hidden
+	text-overflow ellipsis
+
+.CalendarWeekOverlayItemDrag
+	height 10px
+	position absolute
+	bottom 0px
+	left 0px
+	width 100%
+	cursor row-resize
+	text-align center
+
+
+.ml-ellipsis
+	overflow hidden
+	height 100%
+	width:100%
+
+
+.ml-ellipsis > .ml-ellipsis-before
+	float left
+	width 1px
+	height 100%
+
+
+.ml-ellipsis > .ml-ellipsis-content
+	float right
+	width calc(100% - 1px)
+
+
+.ml-ellipsis > .ml-ellipsis-after
+	white-space nowrap
+	box-sizing content-box
+
+	float right
+	position relative
+	top -13px
+	left 100%
+	width 3em
+	margin-left -3em
+	padding-right 1px
+
+	text-align right
+	background #d0dde4
+	background linear-gradient(to right, rgba(208,221,228,0) 0%,rgba(208,221,228,1) 45%,rgba(208,221,228,1) 100%)
+	height 11px
+	line-height 9px
+
+	span
+		display inline-block
+		line-height 10px

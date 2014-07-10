@@ -1,0 +1,34 @@
+.CalendarWeekTooltip
+	position: absolute;
+	ff(bold, 13)
+	text-shadow: 0 1px 0 #000;
+	color: #86b5d2;
+	background-color: #343434;
+	line-height 56px
+	white-space: nowrap;
+	z-index: 999;
+	text-align: center;
+	box-sizing: border-box;
+	padding 0 18px 0 46px
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMEI2MThFRUVCMTYxMUUzODg0Qjg4MzQwOUJDQzgwRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMEI2MThFRkVCMTYxMUUzODg0Qjg4MzQwOUJDQzgwRCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUwQjYxOEVDRUIxNjExRTM4ODRCODgzNDA5QkNDODBEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUwQjYxOEVERUIxNjExRTM4ODRCODgzNDA5QkNDODBEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+E+iZrAAAAIJJREFUeNpibNt66T8DBYCJgULAAmNUeeuRpBHoclQDgAKMJFr+nxgv/IcpJOgFEKj00kWRbN92maAc9QIRyWRsTv6P5BpGZNdQ3wXI0QmLKmxiOA1Ai87/hKIYwwBk/+GLBaLCAOR0QimUBW8q+v+fkZRARI4q+uVGRkJpnRAACDAAYq4wVjHuJ8IAAAAASUVORK5CYII=')
+	background-repeat no-repeat
+	background-position 20px center
+	/*display none*/
+	visibility hidden
+	opacity 0
+	top 36px
+	left 50%
+	margin-left -96px
+	height 0px
+	overflow hidden
+	transform translate( 0, 10px )
+
+	&:before
+		border: solid;
+		border-color: #343434 transparent;
+		border-width: 0 6px 6px 6px;
+		top: -5px;
+		content: "";
+		left: 45%;
+		position: absolute;
+		z-index: 99;

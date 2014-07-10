@@ -1,0 +1,74 @@
+*
+    box-sizing border-box
+
+.block
+  padding 29px
+  position relative
+  sf()
+
+.block_vpadding
+    width 100%
+    padding 0  29px
+    position relative
+    sf()
+.block_nopadding
+    width 100%
+    padding 0px
+    position relative
+    sf()
+.block_toppadding
+    width 100%
+    padding 29px 0 0 0
+    position relative
+    sf()
+.block_notoppadding
+    width 100%
+    padding-top 0px
+    position relative
+    sf()
+.block_smallpadding
+    width 100%
+    padding 9px 29px
+    position relative
+    sf()
+.block_middlepadding
+    width 100%
+    padding 17px 29px
+    position relative
+    sf()
+
+.block__white
+    background #FFF
+    border 1px solid #e9eaeb
+
+.block__transparent
+    background transparent
+    border 1px solid #e9eaeb
+
+.block__nobottomborder
+    border-bottom none !important
+
+.block__notopborder
+    border-top none !important
+
+.block__bottomborder
+    border-bottom-color #adadad
+
+
+.block__textoverflow
+    overflow hidden
+    text-overflow ellipsis
+
+.block__textoverflow__link
+    @extend .block__textoverflow
+    color #256c97
+
+.right
+    float right
+
+.fixed
+    position fixed
+    left 50%
+    right 50%
+    margin-left -480px
+

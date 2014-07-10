@@ -1,0 +1,26 @@
+<div class='calendarMonth'>
+    <div class='calendarMonthRow'>
+        <div class='calendarMonthCellHeader' ng-repeat='weekday in weekdays'>
+            {{ weekday|capitalize }}
+        </div>
+    </div>
+    <div class='calendarMonthRow' ng-repeat='week in month'>
+        <div class='calendarMonthCell' ng-repeat='day in week' ng-click='changeActiveDay()'
+             ng-class='{calendarMonthCellActive: day.isToday, calendarMonthCellWeekend: day.dayIndex == 6 || day.dayIndex == 7}'>
+            <div ng-show='!day.outmonth'>{{ day.day }}
+                <div class='calendarMonthFill'
+                     ng-style='{ height: day.eventsLoadHeight(), opacity: day.eventsLoadOpacity() }'
+                     ng-show='day.events.length'></div>
+                <div class='calendarMonthInviteBlock' ng-show='day.events.length'>
+                    <div class='calendarMonthInvite' ng-show='day.getNotAccepted().length'>+</div>
+                    <div class='calendarMonthInviteAccepted' ng-show='day.events.length - day.getNotAccepted().length'>
+                        {{ day.events.length - day.getNotAccepted().length }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='calendarMonthRow' ng-hide='month.length == 6'>
+        <div class='calendarMonthCell' ng-repeat='day in [1,2,3,4,5,6,7]'></div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class='autocompleteWrapper autocompleteTop' ng-show='showAutocomplete'>
+    <input class='textinput textinput__topborder textinput__bluefocus' ng-model='autocompleteQuery' ng-focus='showAutocomplete' />                <div class='autocomplete' ng-show='result.length'>
+    <div class='autocomplete_item' ng-repeat='rec in result | limitTo:resultLimit' ng-click='inviteMember(rec)'>
+        <div ng-if='rec.type == "user"'>
+            <div class='autocomplete_item_avatar_wrap'>
+                <div class='person_avatar' ng-colored-avatar='' status-source='rec.obj'>
+                    <a href='{{ rec.obj.profile_url }}'>
+                        <img ng-src='{{ rec.obj.avatar_50_url }}' />
+                    </a>
+                </div>
+            </div>
+            <div class='autocomplete_item_text'>
+                <div class='autocomplete_item_name'>
+                    {{ rec.obj.full_name }}
+                </div>
+                <div class='autocomplete_item_depart'>
+                    {{ rec.obj.position.name_ru }}, {{ rec.obj.departament.name_ru }}
+                </div>
+            </div>
+        </div>
+        <div ng-if='rec.type == "group"'>
+            <div class='autocomplete_item_text'>
+                <div class='autocomplete_item_name'>
+                    {{ rec.obj.name }}
+                </div>
+                <div class='autocomplete_item_depart'>
+                    {{ rec.obj.description }}
+                </div>
+            </div>
+        </div>
+        <div ng-if='rec.type == "department"'>
+            <div class='autocomplete_item_text'>
+                <div class='autocomplete_item_name'>
+                    {{ rec.obj.name_ru }}
+                </div>
+                <div class='autocomplete_item_depart'>
+                    {{ rec.obj.description }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='autocomplete_item' ng-hide='result.length <= resultLimit'>
+        <div class='autocomplete_item_text'>
+            <div class='autocomplete_item_name'>
+                Найдено ещё {{result.length-resultLimit}} {{result.length-resultLimit|plural:"совпадение,совпадения,совпадений"}}
+            </div>
+            <div class='autocomplete_item_depart'>
+                Уточните поиск чтоб увидеть результаты
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

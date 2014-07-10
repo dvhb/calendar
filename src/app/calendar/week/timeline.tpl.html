@@ -1,0 +1,65 @@
+<table class='CalendarWeek'>
+    <tr>
+        <th class='CalendarWeekHead'></th>
+        <th class='CalendarWeekHead CalendarWeekHeadWeekday' data-weekday='1'>{{view.start | timelineWeek:0 }},
+            <nobr>{{view.start | timelineDay:0 }}</nobr>
+        </th>
+        <th class='CalendarWeekHead CalendarWeekHeadWeekday' data-weekday='2'>{{view.start | timelineWeek:1 }},
+            <nobr>{{view.start | timelineDay:1 }}</nobr>
+        </th>
+        <th class='CalendarWeekHead CalendarWeekHeadWeekday' data-weekday='3'>{{view.start | timelineWeek:2 }},
+            <nobr>{{view.start | timelineDay:2 }}</nobr>
+        </th>
+        <th class='CalendarWeekHead CalendarWeekHeadWeekday' data-weekday='4'>{{view.start | timelineWeek:3 }},
+            <nobr>{{view.start | timelineDay:3 }}</nobr>
+        </th>
+        <th class='CalendarWeekHead CalendarWeekHeadWeekday' data-weekday='5'>{{view.start | timelineWeek:4 }},
+            <nobr>{{view.start | timelineDay:4 }}</nobr>
+        </th>
+        <th class='CalendarWeekHead CalendarWeekHeadWeekend' data-weekday='6'>{{view.start | timelineWeek:5 }},
+            <nobr>{{view.start | timelineDay:5 }}</nobr>
+        </th>
+        <th class='CalendarWeekHead CalendarWeekHeadWeekend' data-weekday='0'>{{view.start | timelineWeek:6 }},
+            <nobr>{{view.start | timelineDay:6 }}</nobr>
+        </th>
+        <th class='CalendarWeekHead'></th>
+    </tr>
+    <tbody>
+    <tr ng-repeat='row in timeline.notWorkingTime1()' ng-if='showNotWorkingTime1'>
+        <td class='CalendarWeekRowCellTime' data-hour='{{ row }}' ng-class='{active : isActualHour(row)}'>{{ row }}:00
+        </td>
+        <td class='CalendarWeekRowCell' ng-repeat='i in [0,1,2,3,4,5,6]' ng-click='createEmptyEventOnCell(row, i)'
+            event-tooltip='Create new event'></td>
+        <td class='CalendarWeekRowCellTime'>{{ row }}:00</td>
+    </tr>
+    <tr ng-if='!showNotWorkingTime1'>
+        <td class='CalendarWeekRowShowTime' colspan='9'>
+            <button class='CalendarWeekShowTime' ng-click='showNotWorkingTime(1)'>Early time</button>
+        </td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr class='CalendarWeekRow' ng-repeat='row in timeline.workingTime()' ng-class='{active : isActualHour(row)}'>
+        <td class='CalendarWeekRowCellTime' data-hour='{{ row }}' ng-class='{active : isActualHour(row)}'>{{ row }}:00
+        </td>
+        <td class='CalendarWeekRowCell' ng-repeat='i in [0,1,2,3,4,5,6]' ng-click='createEmptyEventOnCell(row, i)'
+            event-tooltip='Create new event'></td>
+        <td class='CalendarWeekRowCellTime'>{{ row }}:00</td>
+
+    </tr>
+    </tbody>
+    <tbody>
+    <tr ng-repeat='row in timeline.notWorkingTime2()' ng-if='showNotWorkingTime2'>
+        <td class='CalendarWeekRowCellTime' data-hour='{{ row }}' ng-class='{active : isActualHour(row)}'>{{ row }}:00
+        </td>
+        <td class='CalendarWeekRowCell' ng-repeat='i in [0,1,2,3,4,5,6]' ng-click='createEmptyEventOnCell(row, i)'
+            event-tooltip='Create new event'></td>
+        <td class='CalendarWeekRowCellTime'>{{ row }}:00</td>
+    </tr>
+    <tr ng-if='!showNotWorkingTime2'>
+        <td class='CalendarWeekRowShowTime' colspan='9'>
+            <button class='CalendarWeekShowTime' ng-click='showNotWorkingTime(2)'>Late time</button>
+        </td>
+    </tr>
+    </tbody>
+</table>

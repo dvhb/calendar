@@ -1,0 +1,14 @@
+{
+  "name": "dvhb-calendar",
+  "version": "0.2.0",
+  "dependencies": {
+    "jquery": "=1.9",
+    "angular": "=1.2.7",
+    "angular-resource": "=1.2.7",
+    "angular-cookies": "=1.2.7",
+    "angular-route": "=1.2.7",
+    "momentjs": "=2.5.1",
+    "underscore": "~1.6.0",
+    "restangular": "=1.4.0"
+  }
+}

@@ -1,0 +1,63 @@
+.CalendarMonthHeader
+	sf()
+	ff(light_f, 24)
+	color #000
+	border-bottom 1px solid #e9eaeb
+	margin-bottom 17px
+	margin-left 10px
+	height 27px
+
+.CalendarMonthHeaderRight
+	@extend .CalendarMonthHeader
+
+	margin-left 0px
+	margin-right 10px
+
+.CalendarMonthHeaderCurrentMonth
+	background #fff
+	margin-bottom -5px
+	display inline
+	line-height 28px
+	float right
+	padding-left 5px
+	padding-right 2px
+	position relative
+
+	sup
+		ff(light_f, 14)
+		position absolute
+		right 100%
+		top 0
+
+
+.CalendarMonthHeaderSiblingMonth
+	float left
+	background #fff
+	ff(medium, 14)
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAALCAYAAADsm6dVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCOUEyMUY5QkU2NDExMUUzOTI5MjlEMUYyRDg5NDkxQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCOUEyMUY5Q0U2NDExMUUzOTI5MjlEMUYyRDg5NDkxQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkI5QTIxRjk5RTY0MTExRTM5MjkyOUQxRjJEODk0OTFCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkI5QTIxRjlBRTY0MTExRTM5MjkyOUQxRjJEODk0OTFCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+g4NgXgAAAOdJREFUeNrs3SGKAnEYxuGZ0StZPYbNTVaTGzSYTQrCruAGDdu8hQaLB/A44/cHhWEY2LLjlOeBF1FMX/uhaJ7Nz1mDcbka/mYAAADAv8oXl1E8nOqvF01xHjs6GQAAALRiH5v8FegfzzjvuRcAAAC0Io/91CO9qMX5QZwDAADA+yO9EOcAAADQfaT3YwNxDgAAAJ1G+j19gn6Lbd0EAAAAOrGLXV9fcZ/FNm4CAAAAb/Udm8bK6o/EiXQAAADoIM7Tk/rfrKVIX7sRAAAAtOqrGudJv+FNn+4EAAAArcb5shrnyUOAAQDerx7P84C/3gAAAABJRU5ErkJggg==');
+	background-position: 0 center
+	background-repeat no-repeat
+	padding-left 10px
+	line-height 35px
+	padding-right 5px
+
+.CalendarMonthHeaderCurrentMonthLeft
+	@extend .CalendarMonthHeaderCurrentMonth
+
+	padding-left 0px
+	padding-right 5px
+	float left
+
+	sup
+		right auto
+		left 100%
+
+.CalendarMonthHeaderSiblingMonthRight
+	@extend .CalendarMonthHeaderSiblingMonth
+
+	float right
+	background-position: right center
+	padding-left 5px
+	padding-right 10px
+
+

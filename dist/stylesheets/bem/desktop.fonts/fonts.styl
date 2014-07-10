@@ -1,0 +1,96 @@
+// Mixin for font load
+
+fontPath = "../bem/desktop.fonts/OpenSans/"
+
+fontload(fontName,fontFile,fontWidth,fontStyle)
+    @font-face
+      font-family fontName
+      src url(fontPath fontFile '.eot')
+      src url(fontPath fontFile '.eot?#iefix') format('pxbedded-opentype')
+      src url(fontPath fontFile '.woff') format('woff'), url(fontPath fontFile '.ttf')  format('truetype')
+      src url(fontPath fontFile '.svg#09be4bfe8975a657af6444a6f1d73848') format('svg')
+      font-style fontStyle
+      font-weight fontWidth
+
+fontload('Open Sans',OpenSans-Light-webfont,200, normal)
+fontload('Open Sans',OpenSans-LightItalic-webfont,200, italic)
+fontload('Open Sans',OpenSans-Regular-webfont,400,normal)
+fontload('Open Sans',OpenSans-Italic-webfont,400,italic)
+fontload('Open Sans',OpenSans-Semibold-webfont,600,normal)
+fontload('Open Sans',OpenSans-SemiboldItalic-webfont,600,italic)
+fontload('Open Sans',OpenSans-Bold-webfont,700,normal)
+fontload('Open Sans',OpenSans-BoldItalic-webfont,700,italic)
+fontload('Open Sans',OpenSans-ExtraBold-webfont,800,normal)
+fontload('Open Sans',OpenSans-ExtraBoldItalic-webfont,800,italic)
+
+ff(fontfamaly = defaultFont,fz=16,lh=1.4)
+	if fontfamaly == defaultFont
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')lineHeight = unit(fz*lh,'px')lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight defaultFont
+		font-weight 400
+		font-style normal
+	if fontfamaly == "bold"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 700
+		font-style normal
+	if fontfamaly == "bold_i"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 700
+		font-style italic
+	if fontfamaly == "book"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 400
+		font-style normal
+	if fontfamaly == "book_i"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 400
+		font-style italic
+	if fontfamaly == "light_f"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 200
+		font-style normal
+	if fontfamaly == "light_i"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 200
+		font-style italic
+	if fontfamaly == "medium"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 600
+		font-style normal
+	if fontfamaly == "medium_i"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 600
+		font-style italic
+	if fontfamaly == "normal"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 400
+		font-style normal
+	if fontfamaly == "normal_i"
+		fontSize = unit(fz,'px')
+		lineHeight = unit(fz*lh,'px')
+		font fontSize / lineHeight 'Open Sans', 'Trebuchet MS', sans-serif
+		font-weight 400
+		font-style italic
+
+a
+  color #256c97
+  text-decoration none

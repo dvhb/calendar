@@ -1,0 +1,73 @@
+@-webkit-keyframes
+  flip
+    0% {
+		-webkit-transform perspective(400px) translateZ(0) rotateY(0) scale(1)
+    -webkit-animation-timing-function ease-out
+
+40%
+  -webkit-transform perspective(400px) translateZ(150px) rotateY(170deg) scale(1)
+  -webkit-animation-timing-function ease-out
+  -moz-transform perspective(400px) translateZ(150px) rotateY(170deg) scale(1)
+  -moz-animation-timing-function ease-out
+  -o-transform perspective(400px) translateZ(150px) rotateY(170deg) scale(1)
+  -o-animation-timing-function ease-out
+  transform perspective(400px) translateZ(150px) rotateY(170deg) scale(1)
+  animation-timing-function ease-out
+
+50%
+  -webkit-transform perspective(400px) translateZ(150px) rotateY(190deg) scale(1)
+  -webkit-animation-timing-function ease-in
+  -moz-transform perspective(400px) translateZ(150px) rotateY(190deg) scale(1)
+  -moz-animation-timing-function ease-in
+  -o-transform perspective(400px) translateZ(150px) rotateY(190deg) scale(1)
+  -o-animation-timing-function ease-in
+  transform perspective(400px) translateZ(150px) rotateY(190deg) scale(1)
+  animation-timing-function ease-in
+
+80%
+  -webkit-transform perspective(400px) translateZ(0) rotateY(360deg) scale(.95)
+  -webkit-animation-timing-function ease-in
+  -moz-transform perspective(400px) translateZ(0) rotateY(360deg) scale(.95)
+  -moz-animation-timing-function ease-in
+  -o-transform perspective(400px) translateZ(0) rotateY(360deg) scale(.95)
+  -o-animation-timing-function ease-in
+  transform perspective(400px) translateZ(0) rotateY(360deg) scale(.95)
+  animation-timing-function ease-in
+
+100%
+  -webkit-transform perspective(400px) translateZ(0) rotateY(360deg) scale(1)
+  -webkit-animation-timing-function ease-in
+  -moz-transform perspective(400px) translateZ(0) rotateY(360deg) scale(1)
+  -moz-animation-timing-function ease-in
+  -o-transform perspective(400px) translateZ(0) rotateY(360deg) scale(1)
+  -o-animation-timing-function ease-in
+  transform perspective(400px) translateZ(0) rotateY(360deg) scale(1)
+  animation-timing-function ease-in
+
+}
+  @-moz-keyframes
+    flip
+      0% {
+		-moz-transform perspective(400px) translateZ(0) rotateY(0) scale(1)
+      -moz-animation-timing-function ease-out
+  @-o-keyframes
+    flip
+      0% {
+		-o-transform perspective(400px) translateZ(0) rotateY(0) scale(1)
+      -o-animation-timing-function ease-out
+  @keyframes
+    flip
+      0% {
+		transform perspective(400px) translateZ(0) rotateY(0) scale(1)
+      animation-timing-function ease-out
+  .animated
+    &.flip
+      -webkit-backface-visibility visible !important
+      -webkit-animation-name flip
+      -moz-backface-visibility visible !important
+      -moz-animation-name flip
+      -o-backface-visibility visible !important
+      -o-animation-name flip
+      backface-visibility visible !important
+      animation-name flip
+

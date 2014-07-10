@@ -1,0 +1,25 @@
+<div ng-controller='CalendarCtrl'>
+    <section class='CalendarWrapper' ng-style='{paddingTop: !showMonthCalendar ? 124 : 84}'>
+        <div class='CalendarButtons'>
+
+            <div class='CalendarButtonsLeft' ng-click='showMonthCalendar=!showMonthCalendar'>
+                <a class='ButtonCalendarExpand' ng-show='showMonthCalendar' title='Hide month calendar'></a>
+                <a class='ButtonCalendarCollapse' ng-hide='showMonthCalendar' title='Show month calendar'></a>
+            </div>
+            <div class='CalendarButtonsRight'>
+                <div class='ButtonGroup'>
+                    <a class='ButtonCalendarWeek active' title='Week calendar'></a>
+                    <a class='ButtonCalendarDaily' title='Day calendar'></a>
+                </div>
+            </div>
+        </div>
+        <div ng-include='"calendar/months/index.tpl.html"'></div>
+    </section>
+
+    <section class='CalendarWeekWrapper' bn-document-mouseup='mouseup()' bn-document-mousemove='mousemove()'
+             ng-controller='CalendarWeekCtrl'>
+        <div ng-view=''></div>
+        <div ng-include='"calendar/week/timeline.tpl.html"'></div>
+        <div ng-include='"calendar/week/event.tpl.html"'></div>
+    </section>
+</div>

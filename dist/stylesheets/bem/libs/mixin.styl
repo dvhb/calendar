@@ -1,0 +1,23 @@
+abs_center()
+    position absolute
+    margin auto
+    top 0
+    bottom 0
+    left 0
+    right 0
+    sf()
+
+sf()
+    &:after
+        visibility hidden
+        display block
+        content ''
+        clear both
+        height 0
+bg(pos-x = center, pos-y = center)
+    background-position pos-x pos-y
+    background-repeat no-repeat
+
+smallMQ = "only screen and (max-width: 1135px)"
+mediumMQ = "only screen and (min-width: 1135px) and (max-width: 1280px)"
+largeMQ = "only screen and (min-width: 1280px)"

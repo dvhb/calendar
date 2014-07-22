@@ -2,7 +2,7 @@
 
 ## Installing via Bower
 
-	bower install https://github.com/dvhb/dvhb-calendar
+	bower install dvhb-calendar
 
 ## Development
 

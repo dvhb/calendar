@@ -1,4 +1,4 @@
-/*! dvhb-calendar - v0.2.0 - 2014-07-10
+/*! dvhb-calendar - v0.2.0 - 2014-08-25
  * Copyright (c) 2014 Alexey Subbotenko <asu@dvhb.ru>;
  * Licensed 
  */
@@ -626,14 +626,14 @@ angular.module('owork.calendar', [
       $scope.notAcceptedMembers = $filter("membersAccepted")(members, false);
       return $scope.acceptedMembers = $filter("membersAccepted")(members, true);
     }), true);
-    $scope.date_start = moment($scope.event.start).format("L");
+    $scope.date_start = moment($scope.event.start).format("DD.MM.YYYY");
     $scope.$watch("date_start", function(val) {
       var dateEnd, dateStart;
       if (angular.isDefined(val) && val) {
         dateStart = $scope.event.start;
         dateEnd = $scope.event.end;
-        $scope.event.start = moment(val, "DD-MM-YYYY").hour(moment(dateStart).format("HH")).minutes(moment(dateStart).format("mm")).format();
-        $scope.event.end = moment(val, "DD-MM-YYYY").hour(moment(dateEnd).format("HH")).minutes(moment(dateEnd).format("mm")).format();
+        $scope.event.start = moment(val, "DD.MM.YYYY").hour(moment(dateStart).format("HH")).minutes(moment(dateStart).format("mm")).format();
+        $scope.event.end = moment(val, "DD.MM.YYYY").hour(moment(dateEnd).format("HH")).minutes(moment(dateEnd).format("mm")).format();
       }
     });
     $scope.submit = function() {
@@ -1674,7 +1674,7 @@ angular.module("calendar/popup/event.edit.tpl.html", []).run(["$templateCache", 
     "            <input class='textinput textinput__topborder' ng-model='date_start' ng-required='true' name='date_start' ng-pattern='/^\\d{1,2}\\.\\d{1,2}\\.\\d{4}/' />\n" +
     "            <i class='textinput_icon__calendar textinput__topborder'></i>\n" +
     "            <div class='form_error' ng-show='myForm.date_start.$error.required'>Required field</div>\n" +
-    "            <div class='form_error' ng-show='myForm.date_start.$error.pattern'>Enter the date in the format HH.MM.YYYY</div>\n" +
+    "            <div class='form_error' ng-show='myForm.date_start.$error.pattern'>Enter the date in the format DD.MM.YYYY</div>\n" +
     "\n" +
     "        </div>\n" +
     "    </div>\n" +

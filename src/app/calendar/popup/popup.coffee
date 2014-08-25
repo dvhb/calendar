@@ -262,13 +262,13 @@ angular.module("calendar.popup").controller "PopupEventEditCtrl", ($scope, $even
         $scope.acceptedMembers = $filter("membersAccepted")(members, true)
     ), true
 
-    $scope.date_start = moment($scope.event.start).format("L")
+    $scope.date_start = moment($scope.event.start).format("DD.MM.YYYY")
     $scope.$watch "date_start", (val) ->
         if angular.isDefined(val) && val
             dateStart = $scope.event.start
             dateEnd = $scope.event.end
-            $scope.event.start = moment(val, "DD-MM-YYYY").hour(moment(dateStart).format("HH")).minutes(moment(dateStart).format("mm")).format()
-            $scope.event.end = moment(val, "DD-MM-YYYY").hour(moment(dateEnd).format("HH")).minutes(moment(dateEnd).format("mm")).format()
+            $scope.event.start = moment(val, "DD.MM.YYYY").hour(moment(dateStart).format("HH")).minutes(moment(dateStart).format("mm")).format()
+            $scope.event.end = moment(val, "DD.MM.YYYY").hour(moment(dateEnd).format("HH")).minutes(moment(dateEnd).format("mm")).format()
             return
 
     $scope.submit = ->

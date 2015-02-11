@@ -1,6 +1,9 @@
-/*! dvhb-calendar - v0.2.0 - 2014-08-25
- * Copyright (c) 2014 Alexey Subbotenko <asu@dvhb.ru>;
- * Licensed 
+/*!
+ * dvhbCalendar - AngularJS calendar
+ * @version v0.2.1 
+ * @link http://dvhb.github.io/dvhb-calendar 
+ * @author Alexey Subbotenko <asu@dvhb.ru>
+ * @license MIT License, http://www.opensource.org/licenses/MIT
  */
 angular.module('owork.calendar', [
     'common.api',
@@ -772,13 +775,17 @@ angular.module('owork.calendar', [
       return moment($scope.view.start).add("d", weekday).format("D MMMM");
     };
     $scope.getEventRow = function(event) {
+      var hour;
+      hour = moment(event.start).format("H");
       if (event) {
-        return $("[data-hour=\"" + moment(event.start).format("H") + "\"]");
+        return $("[data-hour='" + hour + "']");
       }
     };
     $scope.getEventColumn = function(event) {
+      var weekday;
+      weekday = moment(event.start).format("d");
       if (event) {
-        return $("[data-weekday=\"" + moment(event.start).format("d") + "\"]");
+        return $("[data-weekday='" + weekday + "']");
       }
     };
     $scope.getEventHeight = function(event) {

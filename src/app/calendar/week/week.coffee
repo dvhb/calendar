@@ -69,10 +69,12 @@ angular.module("calendar.week").controller "CalendarWeekCtrl", ($rootScope, $sco
         moment($scope.view.start).add("d", weekday).format "D MMMM"
 
     $scope.getEventRow = (event) ->
-        $ "[data-hour=\"" + moment(event.start).format("H") + "\"]"  if event
+        hour = moment(event.start).format("H")
+        $ "[data-hour='#{hour}']"  if event
 
     $scope.getEventColumn = (event) ->
-        $ "[data-weekday=\"" + moment(event.start).format("d") + "\"]"  if event
+        weekday = moment(event.start).format("d")
+        $ "[data-weekday='#{weekday}']" if event
 
     $scope.getEventHeight = (event) ->
         if event

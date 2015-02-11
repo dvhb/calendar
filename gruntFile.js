@@ -42,10 +42,12 @@ module.exports = function(grunt) {
     distdir: 'dist',
     tempdir: 'build',
     pkg: grunt.file.readJSON('package.json'),
-    banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n' +
-      '<%= pkg.homepage ? " * " + pkg.homepage + "\\n" : "" %>' +
-      ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>;\n' +
-      ' * Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %>\n */\n',
+    banner: '/*!\n'+
+      ' * <%= pkg.title || pkg.name %>\n' +
+      ' * @version v<%= pkg.version %> \n' +
+      ' * @link <%= pkg.homepage %> \n' +
+      ' * @author <%= pkg.author %>\n' +
+      ' * @license <%= pkg.license %>\n */\n',
     src: {
       js: [
         'src/app/**/**/*.js',

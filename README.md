@@ -12,7 +12,7 @@
 
 ## Examples
 
-* [Full Calendar application](http://embed.plnkr.co/Zxw4GY/preview)
+* [Full Calendar application](http://embed.plnkr.co/2S0Lzl/preview)
 
 ---
 

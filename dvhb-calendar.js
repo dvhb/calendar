@@ -1,7 +1,7 @@
 /*!
  * dvhbCalendar - AngularJS calendar
  * @version v0.2.1 
- * @link http://dvhb.github.io/dvhb-calendar 
+ * @link http://dvhbru.github.io/dvhb-calendar 
  * @author Alexey Subbotenko <asu@dvhb.ru>
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */

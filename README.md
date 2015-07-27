@@ -14,6 +14,10 @@
 
 * [Full Calendar application](http://embed.plnkr.co/2S0Lzl/preview)
 
+## License
+
+[MIT License](./LICENSE) © Devhub
+
 ---
 
 This project is part of [Owork](http://owork.org/).

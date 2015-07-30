@@ -16,7 +16,7 @@
 
 ## License
 
-[MIT License](./LICENSE) © [dvhb](https://github.com/dvhbru)
+[MIT License](./LICENSE) © [dvhb](http://dvhb.ru)
 
 ---
 

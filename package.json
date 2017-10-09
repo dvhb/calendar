@@ -1,13 +1,13 @@
 {
-  "name": "dvhb-calendar",
-  "title": "dvhbCalendar - AngularJS calendar",
-  "version": "0.2.1",
+  "name": "@dvhb/calendar",
+  "title": "@dvhb/calendar - AngularJS calendar",
+  "version": "0.2.2",
   "author": "Alexey Subbotenko <asu@dvhb.ru>",
   "license": "MIT License, http://www.opensource.org/licenses/MIT",
-  "homepage": "http://dvhbru.github.io/dvhb-calendar",
+  "homepage": "http://dvhbru.github.io/calendar",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dvhbru/dvhb-calendar.git"
+    "url": "git://github.com/dvhbru/calendar.git"
   },
   "dependencies": {},
   "devDependencies": {

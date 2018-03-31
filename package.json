@@ -4,10 +4,10 @@
   "version": "0.2.2",
   "author": "Alexey Subbotenko <asu@dvhb.ru>",
   "license": "MIT License, http://www.opensource.org/licenses/MIT",
-  "homepage": "http://dvhbru.github.io/calendar",
+  "homepage": "http://dvhb.github.io/calendar",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dvhbru/calendar.git"
+    "url": "git://github.com/dvhb/calendar.git"
   },
   "dependencies": {},
   "devDependencies": {
